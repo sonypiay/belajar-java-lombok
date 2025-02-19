@@ -22,4 +22,13 @@ public class CustomerTest {
         Assertions.assertEquals("100", customer.getId());
         Assertions.assertEquals("Sony", customer.getName());
     }
+
+    @Test
+    void testEquals() {
+        Customer customer1 = new Customer("100", "Sony");
+        Customer customer2 = new Customer("100", "Sony");
+
+        Assertions.assertEquals(customer1, customer2);
+        Assertions.assertEquals(customer1.hashCode(), customer2.hashCode());
+    }
 }

@@ -5,12 +5,10 @@ import lombok.*;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
 @EqualsAndHashCode
-public class Customer {
+public class Employee {
 
     private String id;
 
     private String name;
-
 }
